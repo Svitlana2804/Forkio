@@ -1,0 +1,228 @@
+
+.pricing {
+  background-image: url('../images/pricing-bg.png');
+  background-size: cover;
+  padding: 83px 0 61px;
+  .container {
+    max-width: 1200px;
+    margin: $margin;
+    padding: 0 10px;
+  }
+  &__body {
+    
+    h2 {
+      color: #fff;
+      text-align: center;
+      @include montserrat-700;     
+      font-size: 48px;
+      line-height: 1.04;
+      margin-bottom: 112px;
+    }
+    ul {
+      @include f-r-sb;
+      column-gap: 15px;
+      width: 100%;
+
+      li{
+        width: 257px;
+      }
+      .large{
+        width: 299px;      
+      }
+    }
+
+    &_card-title {
+      background: rgba(255, 255, 255, 0.059);
+      h3 {
+        color: #ffffff;
+        text-align: center;
+        @include montserrat-400;      
+        font-size: 24px;
+        line-height: 1;
+        text-transform: uppercase;
+        padding: 36px 30px;
+        @media screen and (max-width: 560px) {
+          font-size: 21px;
+        }
+      }
+    }
+    &_card-discription {
+      background: rgba(255, 255, 255, 0.11);
+      @include f-r-sb;
+      flex-direction: column;
+      span {
+        display: block;
+        color: $clr-pricing;
+        text-align: center;
+        @include montserrat-700;
+        font-size: 60px;
+        line-height: 1.5;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+      }
+      .price-large{
+        font-size: 82px;
+        line-height: 1.09;
+        margin-top: 14px;
+      }
+     .price{
+        margin-top: 30px;
+      }
+      .time-period {
+        color: $clr-pricing;
+        text-align: center;
+        @include montserrat-400;
+        font-size: $fz14;
+        line-height: 1.14;
+        text-transform: uppercase;
+        margin-bottom: 38px;
+      }
+      .line{
+        width: 30%;
+        height: 5px;
+        background: #8D81AC;
+        margin: $margin;
+        margin-bottom: 30px;
+      }
+      .discription {
+        color: $clr-pricing;
+        text-align: center;
+        @include montserrat-400;
+        font-size: $fz16;
+        line-height: 1.12;
+        margin-bottom: 36px; 
+      }
+      .first-disrition{
+        margin-bottom: 54px;
+      } 
+      a {
+        display: inline-block;
+        color: $clr-pricing;
+        text-align: center;
+        @include montserrat-400;
+        font-size: $fz15;
+        line-height: 1;
+        text-transform: uppercase;
+        padding: 15px 37px;
+        border-radius: 30px;
+        background: rgba(255, 255, 255, 0.15);
+        margin-bottom: 36px;
+        max-width: 163px;
+      }
+    }
+
+    .large-title {
+      background: rgba(0, 0, 0, 0.11);
+      h3 {
+        padding: 43px 69px;
+      }
+    }
+    .lerge {
+      background: rgba(70, 48, 72, 0.84);
+      span {
+        font-size: 82px;
+        line-height: 1.09;
+        margin-bottom: 16px;
+      }
+      &__time-period {
+         color: $clr-pricing;
+         text-align: center;
+         @include montserrat-400;
+         font-size: $fz14;        
+         line-height: 1.14;
+         text-transform: uppercase;
+         margin-bottom: 46px; 
+      }
+      &__discription{
+         color: $clr-pricing;
+        text-align: center;
+        @include montserrat-400;
+        font-size: fz16;
+        line-height: 1.12; 
+         margin: 10px 0 83px;
+      }
+      a {
+        margin-bottom: 47px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .pricing{
+    padding: 80px 0 94px;
+    .container{
+      max-width: 602px;
+      margin: 0 auto;
+    }
+    &__body{
+      h2{
+        font-size: 42px;
+        line-height: 1.04;
+        margin-bottom: 39px;
+        padding-left: 24px;
+      }
+      ul{
+        @include f-wrap;
+        justify-content: flex-end;
+        row-gap: 30px;
+       
+       li {
+        width: calc(50% - 25px);
+      }
+      .large{
+        width: 50%; 
+      }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .pricing{
+    padding: 0 0 10px 0;
+    &__body{
+      &_card-discription{
+        .first-disrition{
+          margin-bottom: 37px;
+          &__btn{
+            margin-bottom: 67px;
+          }
+        }
+        .price{
+          line-height: 1.03;
+        }
+        .price-large{
+          line-height: 1.02;
+        }
+        .discription{
+          line-height: 1.75;
+        }
+        .lerge__discription{
+          line-height: 2;
+        } 
+      }
+      
+      h2{
+        font-size: 28px;
+        line-height: 1.5;
+        margin-bottom: 32px;
+        padding: 0;
+      }
+      ul{
+        @include f-column;
+        row-gap: 18px;
+        margin: 0 auto;
+        
+        li{
+          width: 257px;
+        }
+        .large{
+       width: 299px;
+        }
+      } 
+    }
+  }
+}
+
+

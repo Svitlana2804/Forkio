@@ -1,0 +1,61 @@
+
+@mixin burger-sz {
+  height: 3px;
+  right: 10px;
+  transition: all 0.3s ease 0s;
+}
+
+@mixin position {
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+}
+@mixin flex-c {
+  display: flex;
+  justify-content: center;
+}
+@mixin size {
+  font-weight: 700;
+  line-height: 1;
+}
+@mixin ccc {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+@mixin size-r {
+  font-weight: 400;
+  line-height: 1;
+}
+@mixin flex-sb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin f-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+@mixin f-r-sb{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin f-column{
+  display: flex;
+  flex-direction: column;
+}
+@mixin f-center{
+  display: flex;
+  justify-content: center;
+}
+@mixin montserrat-400{
+  font-family: Montserrat;
+  font-weight: 400;
+}
+@mixin montserrat-700{
+  font-family: Montserrat;
+  font-weight: 700;
+}
+

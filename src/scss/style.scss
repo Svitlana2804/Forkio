@@ -1,0 +1,28 @@
+@use 'sass:math';
+
+/**
+* Подключение шрифтов локально из папки "./src/fonts"
+*/
+@import 'config/fonts';
+
+/**
+* Подключение sass mixins
+*/
+@import 'config/mixins';
+@import 'config/variables';
+
+/** Обнуление */
+@import 'config/reset';
+
+/**
+* Подключение стилей отдельных блоков и секций
+*/
+
+@import 'components/header';
+@import 'components/main';
+
+
+@import 'components/advantages';
+@import 'components/pricing';
+@import 'components/revolutionary';
+
